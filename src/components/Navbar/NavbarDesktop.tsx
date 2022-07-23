@@ -8,7 +8,7 @@ export const NavbarDesktop = () => {
     <NavbarContainer>
        <MyList>
            <NavbarList><GoogleIcon /></NavbarList>
-           <NavbarList>phones</NavbarList>
+           <NavbarList> phones</NavbarList>
            <NavbarList>earbuds</NavbarList>
            <NavbarList>watches</NavbarList>
            <NavbarList>smart home</NavbarList>

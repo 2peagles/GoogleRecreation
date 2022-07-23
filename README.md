@@ -1,2 +1,2 @@
 Using material ui once more, I think styling it is interesting. 
-I am going to do the home page hopefully it will a day or two we will see.
+I am going to do the home page hopefully it will a day or two we will see. hmm. typescript is not working with material ui on some components and I have no clue why. Build the navbar wasn't too hard, I think I'd rather use css and javascript this seems confusing alomst. It's not saving me time like I people say it does. So I must be doing something wrong. 

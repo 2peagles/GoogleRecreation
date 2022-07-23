@@ -15,19 +15,69 @@ export const MobileDrawer = () => {
   return (
     <Box>
         <div onClick={handleClick}>
-           { !menu ? <MenuIcon /> :
+           { !menu ? <MenuIcon sx={{cursor:'pointer'}} /> :
              <>
-                <CloseIcon />
+                <CloseIcon sx={{cursor:'pointer'}}/>
                     <MyMenu>
-                        <MenuList>Phones</MenuList>
-                        <MenuList>Earbuds</MenuList>
-                        <MenuList> smart Home</MenuList>
-                        <MenuList>laptops</MenuList>
-                        <MenuList>subscriptions</MenuList>
-                        <MenuList>offers</MenuList>
-                            <Divider sx={{width:'100vw', position:'absolute', color:Color.light}}/>
-                        <MenuList><IndeterminateCheckBoxOutlinedIcon/> orders</MenuList>
-                        <MenuList><HelpOutlineOutlinedIcon/> Help</MenuList>
+                        <MenuList>
+                            <Box sx={{width:'70px', display:'inline-block'}}>
+                                 <img src='/Images/Nav/pixelmenu.jpg'alt='pixel' height={'50px'}/> 
+                            </Box>
+                            <Box sx={{display:'inline-block'}}>
+                                phones
+                            </Box>
+                            </MenuList>
+                        <MenuList>
+                            <Box sx={{width:'70px', display:'inline-block'}}>
+                                 <img src='/Images/Nav/earbuds.jpg'alt='pixel' height={'50px'} /> 
+                            </Box>
+                            <Box sx={{display:'inline-block'}}>
+                                earbuds
+                            </Box>
+                            </MenuList>
+                            <MenuList>
+                                <Box sx={{width:'70px', display:'inline-block'}}>
+                                    <img src='/Images/Nav/fitbitmenu.jpg'alt='pixel' height={'50px'}  />  
+                                </Box>
+                                <Box sx={{display:'inline-block'}}>
+                                    watches
+                                </Box>                                            
+                            </MenuList>
+                        <MenuList>
+                            <Box sx={{width:'70px', display:'inline-block'}}>
+                              <img src='/Images/Nav/pixelmenu.jpg'alt='pixel' height={'50px'}/>  
+                            </Box>
+                            <Box sx={{display:'inline-block'}}>
+                                smart home
+                             </Box>
+                        </MenuList>
+                        <MenuList>
+                            <Box sx={{width:'70px', display:'inline-block'}}>
+                            <img src='/Images/Nav/pixelbookgomenu.jpg'alt='pixel' height={'40px'}/> 
+                            </Box>
+                            <Box sx={{ display:'inline-block'}}>
+                            laptops
+                            </Box>
+                        </MenuList>
+                        <MenuList>
+                            <Box sx={{width:'70px', display:'inline-block'}}>
+                            <img src='/Images/Nav/pixelmenu.jpg'alt='pixel' height={'50px'}/> 
+                            </Box>
+                            <Box sx={{ display:'inline-block'}}>
+                            subscriptions
+                            </Box>
+                        </MenuList>
+                        <MenuList> 
+                            <Box sx={{width:'70px', display:'inline-block'}}>
+                                <img src='/Images/Nav/pixelmenu.jpg'alt='pixel' height={'50px'}/> 
+                            </Box>
+                            <Box sx={{ display:'inline-block'}}>
+                                offers
+                            </Box>
+                        </MenuList>
+                            <Divider sx={{width:'100vw',margin:'20px', position:'absolute', color:Color.light}}/>
+                            <MenuList sx={{ height:'20px', marginTop:'40px', justifyContent:'space-between', width:'13%'}}><IndeterminateCheckBoxOutlinedIcon/> orders</MenuList>
+                            <MenuList sx={{ height:'20px', justifyContent:'space-between', width:'11%'}}><HelpOutlineOutlinedIcon/> Help</MenuList>
                     </MyMenu>
                 </>
               }
