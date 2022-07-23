@@ -11,7 +11,7 @@ export const NavbarContainer = styled(Box)(()=>({
 export const NavbarList = styled(List)(() =>({
     padding:' 0px 10px',
     flexGrow: 1,
-    fontSize:'18px',
+    fontSize:'17px',
     cursor:'pointer',
     color:Color.primary,
     display:'inline-block',
@@ -36,14 +36,21 @@ export const MenuList = styled(List)(()=>({
     color:Color.primary,
     fontFamily:' sans-serif' ,
     alignItems:'center',
-    textTransform:'capitalize'
+    textTransform:'capitalize',
+    backgroundColor: Color.white,
+    '&:hover': {
+      backgroundColor: Color.light,
+      opacity: [0.9, 0.8, 0.7],
+    },
 }))
 
 export const MyMenu = styled(Box)(()=>({
     position:'absolute',
-   marginTop:'25px',
-   height:'80vh',
+   paddingTop:'25px',
+   height:'100vh',
+   width:'100vw',
    display:'block',
    left:0,
-//    backgroundColor:Color.light
+   zIndex:1,
+   backgroundColor: Color.white,
 }))
