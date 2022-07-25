@@ -4,12 +4,18 @@ import { Box } from '@mui/system';
 import { Color } from './theme';
 
 export const NavbarContainer = styled(Box)(()=>({
+    top:'0',
+    zIndex:'1999',
+    width:'100vw',
     display:'flex',
-    padding:'10px 20px',
-    justifyContent:'space-between'
+    padding:'5px 0px',
+    position:'fixed',
+    alignItems:'center',
+    justifyContent:'space-between',
+    backgroundColor:Color.white
 }));
 export const NavbarList = styled(List)(() =>({
-    padding:' 0px 10px',
+    padding:'10px ',
     flexGrow: 1,
     fontSize:'17px',
     cursor:'pointer',
@@ -27,7 +33,7 @@ export const MyList = styled(List)(()=>({
 }))
 export const MenuList = styled(List)(()=>({
     width:'100vw',
-    left:0,
+    // left:0,
     height:'50px',
     display:'flex',
     cursor:'pointer',
@@ -45,12 +51,11 @@ export const MenuList = styled(List)(()=>({
 }))
 
 export const MyMenu = styled(Box)(()=>({
-    position:'absolute',
    paddingTop:'25px',
    height:'100vh',
    width:'100vw',
    display:'block',
-   left:0,
-   zIndex:1,
+//    left:0,
+   zIndex:1999,
    backgroundColor: Color.white,
 }))

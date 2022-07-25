@@ -2,10 +2,12 @@ import React from 'react';
 import { NavbarContainer, MyList, NavbarList } from '../../styles/Navbar';
 import GoogleIcon from '@mui/icons-material/Google';
 import { Actions } from './Actions';
+import { Box } from '@mui/material';
 
 export const NavbarDesktop = () => {
   return (
     <NavbarContainer>
+        <Box>
        <MyList>
            <NavbarList><GoogleIcon /></NavbarList>
            <NavbarList> phones</NavbarList>
@@ -16,7 +18,8 @@ export const NavbarDesktop = () => {
            <NavbarList>subscriptions</NavbarList>
            <NavbarList>offers</NavbarList>
        </MyList>
-       <Actions />
+      </Box>
+       <Actions />  
     </NavbarContainer>
   );
 }

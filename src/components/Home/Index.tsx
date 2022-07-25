@@ -1,15 +1,15 @@
 import React from 'react';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { HeroMobile } from './HeroMobile';
-import { HeroDesktop } from './HeroDesktop';
+import { HomeMobile } from './HomeMobile';
+import { HomeDesktop } from './HomeDesktop';
 
-export const Hero = () => {
+export default function Home () {
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('md'))
   return (
     <>
-        {matches ? <HeroMobile/> : <HeroDesktop />}
+        {matches ? <HomeMobile/> : <HomeDesktop />}
     </>
   )
 }
