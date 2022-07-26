@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from '@mui/system';
 import { Container } from '@mui/material';
 import Navbar from './components/Navbar';
-import Home  from './components/Home';
+import Home from './components/Home/Index';
 import theme from './styles/theme';
 import './App.css';
 
@@ -14,7 +14,7 @@ function App() {
             disableGutters
           >
         <Navbar />
-            <Home/>
+            <Home />
         </Container>
     </ThemeProvider>
   );

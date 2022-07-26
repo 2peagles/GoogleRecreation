@@ -1,5 +1,8 @@
-import { Box, Button, Typography  } from '@mui/material';
+import { Box, Button, IconButton, Typography  } from '@mui/material';
 import { BodyContainer, MyContainer } from '../../styles/Home';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import SellOutlinedIcon from '@mui/icons-material/SellOutlined';
+import GoogleIcon from '@mui/icons-material/Google';
 import { Color } from '../../styles/theme';
 
 export const HomeDesktop = () => {
@@ -29,8 +32,7 @@ export const HomeDesktop = () => {
           </Box>
             <Box sx={{display:'inline-block', paddingLeft:'100px'}}>
               <img src='/Images/hero.png' alt='Pixel 6a with pixel 5a buds' height='700px' />
-            </Box>
-        
+            </Box>     
         </BodyContainer>
       <BodyContainer>
       <Typography variant='h3' component='h6'>
@@ -232,7 +234,7 @@ export const HomeDesktop = () => {
         <Box sx={{display:'inline-block'}}>
           <Button>Icon here </Button>
             <Button>Icon here </Button>
-            <Button>Icon here </Button>
+              <IconButton><GoogleIcon /> </IconButton>
         </Box>
             <Box  sx={{display:'inline-block'}}>
           <Typography variant='h6'> Pixel is the official fan phone of the NBA. </Typography>
@@ -248,12 +250,12 @@ export const HomeDesktop = () => {
       </BodyContainer>
         <BodyContainer sx={{ height: '40vh', marginTop: '15vh' }}>
           <Box sx={{ textAlign: 'center', width: '30vw' }}>
-            <Button variant='outlined'>icon here </Button>
+            <IconButton><SellOutlinedIcon/> </IconButton>
             <Typography>
               You're all set to receive the latest news and 
               offers from the Google Store.
             </Typography>
-            <Button variant='outlined'>icon here </Button>
+            <IconButton><CheckCircleIcon/></IconButton>
           </Box>
         </BodyContainer>
       </Box>
