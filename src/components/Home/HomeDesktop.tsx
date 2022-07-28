@@ -47,12 +47,15 @@ export const HomeDesktop = () => {
           justifyContent: 'left'
           }}>
           <Box sx={{
-            width: '30%' ,
+            width: '35%' ,
             paddingLeft:'100px'}} >
         <Typography variant='h3' mb={2}>
-            Set your clocks: Google Pixel watch
+            Set your clocks: Google Pixel Watch
         </Typography>
         <Button variant='outlined'> Learn More </Button>
+        </Box>
+        <Box sx={{marginRight:'-200px', overflowY:'hidden'}}>
+          <img src='/Images/pixelwatch.png' alt='Pixel watch'  height='700px' />
         </Box>
       </BodyContainer>
       <BodyContainer sx={{
@@ -62,6 +65,9 @@ export const HomeDesktop = () => {
         alignItems: 'left',
         justifyContent: 'right'
       }}>
+          <Box>
+            <img src='/Images/pixelphone.png' alt='pixel 7 white phone' height='670px'/>
+          </Box>
         <Box sx={{
           width: '30%',
           paddingRight: '150px'
@@ -70,7 +76,7 @@ export const HomeDesktop = () => {
               The wait is on: Pixel 7 phones.
             </Typography>
           <Button variant='outlined'> Learn More </Button>
-        </Box>
+        </Box> 
       </BodyContainer>
       <BodyContainer sx={{height:'30vh'}}>
         <Typography variant='h3'> Shop by category.</Typography>
@@ -233,7 +239,6 @@ export const HomeDesktop = () => {
         }} >
         <Box sx={{display:'inline-block'}}>
           <Button>Icon here </Button>
-            <Button>Icon here </Button>
               <IconButton><GoogleIcon /> </IconButton>
         </Box>
             <Box  sx={{display:'inline-block'}}>
@@ -243,20 +248,27 @@ export const HomeDesktop = () => {
             Pixel phones. Watch now.
           </Typography>
           </Box>
-    
           <Button variant='outlined'> Shop phones</Button>
-
         </Box>
       </BodyContainer>
-        <BodyContainer sx={{ height: '40vh', marginTop: '15vh' }}>
-          <Box sx={{ textAlign: 'center', width: '30vw' }}>
+        <BodyContainer sx={{ height: '30vh', 
+        textAlign: 'center', 
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor: Color.secondary }}>
+          <Box sx={{
+            textAlign: 'center',
+           display:'block',
+           width:'50%',
+            }}>
             <IconButton><SellOutlinedIcon/> </IconButton>
-            <Typography>
+            <Typography variant='h4'>
               You're all set to receive the latest news and 
               offers from the Google Store.
             </Typography>
             <IconButton><CheckCircleIcon/></IconButton>
-          </Box>
+            </Box>
         </BodyContainer>
       </Box>
     </MyContainer>
