@@ -17,7 +17,7 @@ export const BodyContainer = styled(Grid)(() => ({
     width: '85vw',
     height: '90vh',
     marginTop:'20px',
-    display: 'center ',
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
 }))
