@@ -1,4 +1,4 @@
-import { Typography, Grid, List, ListItemText} from '@mui/material';
+import {Container , Typography, Grid, List, ListItemText} from '@mui/material';
 import React from 'react';
 import {FooterIconContainer, FooterList, FooterContainer, FooterIcons} from '../../styles/Footer';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -10,13 +10,15 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function Footer() {
   return (
-    <>
+    <Container maxWidth='xl' sx={{ display: 'flex ',
+    alignItems: 'right',
+    justifyContent: 'right',}}>
       <FooterContainer sx={{
         p: { xs: 4, md: 7 },
         fontSize: { xs: '12px', md: '14px' }
 }}>
       <Grid container sx={{
-        width: '85vw',
+        // width: '85vw',
         minHeight: '120vh',
         marginTop: '20px',
         display: 'flex ',
@@ -167,6 +169,6 @@ export default function Footer() {
           </Grid>
         </FooterIconContainer>
         </Grid>
-   </>
+   </Container>
   )
 }

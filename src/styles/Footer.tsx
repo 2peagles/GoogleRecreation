@@ -3,7 +3,8 @@ import { Box, ListItemButton , Grid } from '@mui/material';
 
 export const FooterContainer = styled( Grid )(()=>({
     minHeight:'120vh',
-    width:'100vw',
+    // width:'100vw',
+    width:'100%',
     marginTop: '20px',
     display: 'flex',
     alignItems: 'center',
